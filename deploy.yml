@@ -1,0 +1,27 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Navigate to project directory
+        run: |
+          cd C:\Users\akapoor\source\repos\CryptoPriceChecker
+        working-directory: .C:/Users/akapoor/source/repos/CryptoPriceChecker
+
+      - name: Run your build command
+        run: |
+          # Example build command
+          npm install && npm run build
+        working-directory: .C:/Users/akapoor/source/repos/CryptoPriceChecker
+        
+      # Other steps can also use working-directory to point to your project

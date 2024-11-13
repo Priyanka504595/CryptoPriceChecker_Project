@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Details</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <!-- Include navbar nice a --> 
+    <nav id="navbar">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='markets.html'">News Updates</button>
+        <button onclick="window.location.href='about.html'">About Me</button>
+    </nav>
+    <div id="crypto-marquee" class="marquee">
+        <!-- Marquee content will be dynamically added here -->
+    </div>
+    <script src="/JavaScript/marquee.js"></script>
+
+    <h1>Cryptocurrency Details</h1>
+    <div id="crypto-details">
+        <!-- Details of the cryptocurrency will be displayed here -->
+    </div>
+
+    <!-- Dropdown for selecting time range adding comment -->
+    <div id="filter-container">
+        <label for="timeRange">Select Time Range:</label>
+        <select id="timeRange" onchange="updateChartTimeRange()">
+            <option value="90">Quarterly</option>
+            <option value="180">Half Yearly</option>
+            <option value="365">Annually</option>
+        </select>
+    </div>
+
+    <!-- Container for the price chart dd-->
+    <h2>Price Trend</h2>
+    <canvas id="priceChart" width="400" height="200"></canvas>
+
+    <script src="/JavaScript/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Price Checker</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <!-- Include navbar.html -->
+    <nav id="navbar">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='markets.html'">Market Statistics</button>
+        <button onclick="window.location.href='about.html'">About Me</button>
+    </nav>
+
+    <div id="crypto-marquee" class="marquee">
+        <!-- Marquee content will be dynamically added here -->
+    </div>
+    <script src="marquee.js"></script>
+
+    <h1>Cryptocurrency Price Checker</h1>
+
+    <!-- Search box for filtering cryptocurrencies -->
+    <div id="search-container">
+        <input type="text" id="crypto-search" placeholder="Search for a cryptocurrency..." onkeyup="filterCryptos()">
+    </div>
+
+    <!-- Cryptocurrency list container -->
+    <div id="crypto-list">
+        <!-- The list of cryptocurrencies will be dynamically displayed here -->
+    </div>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>

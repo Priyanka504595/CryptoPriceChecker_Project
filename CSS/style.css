@@ -1,0 +1,248 @@
+﻿/* General body styling a */
+
+body {
+    background-size: cover;
+    background-color: #f0f4f8; /* Temporary background color */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+
+/* Center the title */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+    nav button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        nav button:hover {
+            background-color: #0056b3;
+        }
+
+/* Search box styling */
+#search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#crypto-search {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the cryptocurrency list container */
+#crypto-list {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    /* Style each link in the cryptocurrency list */
+    #crypto-list a {
+        display: inline-block;
+        padding: 5px 0;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        #crypto-list a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+/* Market charts container styling */
+#market-charts {
+    text-align: left;
+    padding: 20px;
+    max-width: 400px; /* Limit the max width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+    #market-charts h2 {
+        margin-bottom: 10px;
+    }
+
+#chart-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+    #chart-buttons button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        #chart-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+#priceChangeChartContainer {
+    max-width: 400px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the chart */
+    text-align: center;
+}
+
+#filter-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    #filter-container label {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+#timeRange {
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+
+#crypto-details, #filter-container, #priceChart {
+    max-width: 1000px; /* Increase this value as needed */
+    width: 400%; /* Allow the container to take full width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 30px;
+}
+
+#crypto-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.marquee {
+    background-color: #444;
+    color: white;
+    font-size: 1em;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 8px;
+    border-top: 2px solid #555;
+}
+
+    .marquee span {
+        display: inline-block;
+        padding: 0 25px; /* Space between items */
+        animation: marquee 20s linear infinite;
+    }
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%); /* Scroll halfway to loop seamlessly */
+    }
+}
+
+/* Set a flexible width for each chart container */
+ #topMarketCapChartContainer, #volumeTrendsChartContainer {
+    width: 80%; /* Adjust this percentage as needed */
+    max-width: 900px; /* Sets an upper limit so it doesn't stretch too much on large screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
+
+
+canvas {
+    width: 100% !important; /* Ensures the canvas takes full width of the container */
+    height: auto !important; /* Adjusts height based on width */
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increase gap for a spacious layout */
+    justify-content: space-around; /* Spreads out cards evenly */
+    padding: 20px 50px; /* Increase padding for larger section coverage */
+    max-width: 1200px; /* Control max width to avoid stretching on large screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.team-member {
+    flex: 1 1 220px; /* Minimum width of 220px, adjusts with screen size */
+    max-width: 300px; /* Limit max width for larger screens */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Increase padding for a more balanced look */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 100%;
+    height: 300px; /* Set a taller fixed height for full-page coverage */
+    border-radius: 10px; /* Slightly rounded corners */
+    object-fit: cover; /* Crop image to fill container */
+}
+
+.team-member h2 {
+    font-size: 1.2em;
+    margin: 15px 0 8px;
+}
+
+.team-member p {
+    font-size: 1em; /* Slightly larger text for better readability */
+    color: #555;
+}
+
+/* Full-width design for smaller screens */
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 100%; /* Each card takes full width on smaller screens */
+    }
+}
